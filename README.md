@@ -208,6 +208,15 @@ echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
 source ~/.profile
 ```
 
+### Error: La ejecución de scripts está deshabilitada en este sistema
+
+Presiona Win + S, escribe PowerShell, haz clic derecho y selecciona "Ejecutar como administrador".
+
+Ejecutar:
+```bash
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+
 ### Error: Puerto 3000 en uso
 Cuando un puerto se encuentra en uso, nos está indicando que otra aplicación ya está usando este puerto. Comprobad que no tengamos ninguna aplicación corriendo en este puerto, o intentad hacer un cambio del puerto de la aplicación.
 
